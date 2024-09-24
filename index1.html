@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-Time Chat & YouTube Player</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Chat & Listen to Songs</h1>
+
+        <!-- YouTube Song Player -->
+        <div class="youtube-player">
+            <h2>Play a Song</h2>
+            <input type="text" id="youtubeUrl" placeholder="Enter YouTube URL">
+            <button id="playButton">Play Song</button>
+            <iframe id="youtubeFrame" width="560" height="315" src="" frameborder="0" allow="autoplay; encrypted-media;" allowfullscreen></iframe>
+        </div>
+
+        <!-- Chat Section -->
+        <div class="chat-container">
+            <h2>Real-Time Chat</h2>
+            <div id="chat-box"></div>
+            <input type="text" id="chat-input" placeholder="Type a message">
+            <button id="sendButton">Send</button>
+        </div>
+    </div>
+
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.8/firebase-database.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
